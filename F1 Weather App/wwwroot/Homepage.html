@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            font-size: 40px;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="F1_Weather_App.styles.css" asp-append-version="true" />
+    <script>
+        function Hidetires(){
+            document.getElementById("tireinfo").style.display = "none";
+        }
+        
+    </script>
+</head>
+<body>
+    <h1 class="h1 text-center">Welcome to Formula Weather!</h1>
+    <h2 class="h2">Current Forecast</h2>
+    <p>
+        <a href="FormulaWeather.html">
+            Race Schedule
+        </a>
+    </p>
+    <h2 class="h2">Formula 1 Tire Choices</h2>
+
+    <dl id="tireinfo">
+        <dt>C0</dt>
+        <dd>- Hardest tire in the range, maximum reststance to heat and force</dd>
+        <dt>C1</dt>
+        <dd>- 2nd hardest tire, designed to reduce the gap between compounds</dd>
+        <dt>C2</dt>
+        <dd>- 3rd hardest tire, suited for hot, abrasive surfaces</dd>
+        <dt>C3</dt>
+        <dd>- Extremely versatile with an excellent balance</dd>
+        <dt>C4</dt>
+        <dd>- 2nd softest tire, designed for low-severity circuits and fast warm-up</dd>
+        <dt>C5</dt>
+        <dd>- Softest tire in the range, designed for slow circuits with low wear</dd>
+        <dt>Intermediate</dt>
+        <dd>- Most versatile of the rain tires, can be used on both a wet and drying surface</dd>
+        <dt>Full Wet</dt>
+        <dd>- Most effective for heavy rain, designed to disperse water</dd>
+
+    </dl>
+    <button type="button" onclick="Hidetires()">Hide Tire Info</button>
+   
+   
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
